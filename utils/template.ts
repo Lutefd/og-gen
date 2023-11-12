@@ -31,8 +31,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        width:100%
+        padding-left: 25%;
+        text-align: start;
+        margin: 0 auto;
         height: 100%;
     }
     .title{
