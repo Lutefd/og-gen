@@ -1,7 +1,7 @@
 import core, { ScreenshotOptions } from 'puppeteer-core';
 import { getOptions } from './options';
 
-let page: core.Page | null = null;
+let page: core.Page | null;
 
 async function getPage(isDev: boolean): Promise<core.Page> {
   if (page) {
@@ -24,5 +24,5 @@ export async function getScreenshot(
   await canvas.setContent(html);
   await canvas.waitForNetworkIdle();
 
-  return await page?.screenshot({ type });
+  return await page!.screenshot({ type });
 }
