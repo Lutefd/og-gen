@@ -15,7 +15,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const { type, ...options } = result.data;
   const html = getHtml(options);
-  const file = await getScreenshot(html, type, isDev);
+  const file = (await getScreenshot(html, type, isDev)) as string;
 
   res
     .status(200)
