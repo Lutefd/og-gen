@@ -31,7 +31,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 8%;
+        align-items: center;
+        width:100%
         height: 100%;
     }
     .title{
