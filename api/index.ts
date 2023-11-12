@@ -18,8 +18,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const file = await getScreenshot(html, type, isDev);
 
   res
-    .setHeader('Content-Type', `image/${type}`)
     .status(200)
+    .setHeader('Content-Type', `image/${type}`)
     .setHeader(
       'Cache-Control',
       'public, no-transform , immutable, s-maxage=3600, max-age=3600'

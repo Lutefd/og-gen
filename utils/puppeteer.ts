@@ -10,7 +10,7 @@ async function getPage(isDev: boolean): Promise<core.Page> {
   }
 
   const options = await getOptions(isDev);
-  const browser = await puppeteer.launch(options);
+  const browser = await core.launch(options);
   page = await browser.newPage();
   return page;
 }
