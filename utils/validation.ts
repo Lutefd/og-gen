@@ -7,5 +7,5 @@ export const schema = z.object({
   dark: z
     .enum(['true', 'false'])
     .default('true')
-    .transform((val) => val === 'false'),
+    .transform((val) => val === 'true'),
 });

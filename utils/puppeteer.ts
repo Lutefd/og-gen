@@ -24,5 +24,5 @@ export async function getScreenshot(
   await canvas.setContent(html);
   await canvas.waitForNetworkIdle();
 
-  return await page!.screenshot({ type });
+  return await canvas.screenshot({ type });
 }

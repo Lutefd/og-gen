@@ -19,8 +19,8 @@ body {
     ${
       dark
         ? `
-    background: hsl(20, 14.3%, 4.1%);
-    color: '#fafafa';
+    background: black;
+    color: #fafafa;
     `
         : `
         background: white;
